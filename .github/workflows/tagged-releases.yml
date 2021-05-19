@@ -36,4 +36,4 @@ jobs:
       - name: ls2
         run: ls -la
       - name: ls3
-        run: ls /dist
+        run: ls dist
