@@ -32,6 +32,6 @@ jobs:
       - name: ls1
         run: ls -la
       - name: deploy
-        run: REGISTRY=vultr VERSION=${{ steps.get_version.outputs.VERSION }} make deploy
+        run: REGISTRY=ddymko VERSION=${{ steps.get_version.outputs.VERSION }} make deploy
       - name: ls2
         run: ls -la
