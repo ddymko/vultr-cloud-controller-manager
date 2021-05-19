@@ -35,3 +35,5 @@ jobs:
         run: REGISTRY=ddymko VERSION=${{ steps.get_version.outputs.VERSION }} make deploy
       - name: ls2
         run: ls -la
+      - name: ls3
+        run: ls /dist
