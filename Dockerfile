@@ -8,7 +8,7 @@ COPY . .
 
 RUN CGO_ENABLED=0 go build -trimpath -o vultr-cloud-controller-manager .
 
-FROM alpine:latest
+FROM alpine:3.15.3
 RUN apk add --no-cache ca-certificates
 
 COPY --from=build /workspace/vultr-cloud-controller-manager /
